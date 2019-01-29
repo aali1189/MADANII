@@ -1,6 +1,4 @@
 
-package actitvity.cc3;
-
 import java.util.Scanner;
 
 public class IntArray {
