@@ -44,18 +44,24 @@ return (double)(Mean / length);
     }
    
 
-   static int mode(int[] arr){
+    static int mode(int[] arr){
     	int Mode[]  = new int[arr.length];
-        int f = 0;
-        int n = 0;
- for(int i=0; i<arr.length; i++){
-    f = arr[i];
-if(arr[i++] == f){
-n = f;
-}
+       
+
+       int maxValue =0 , maxCount =0;
+
+    for (int i = 0; i < arr.length; ++i) {
+        int count = 0;
+        for (int j = 0; j < arr.length; ++j) {
+            if (arr[j] == arr[i]) ++count;
+        }
+        if (count > maxCount) {
+            maxCount = count;
+            maxValue = arr[i];
+        }
     }
 
-return n;
+    return maxValue;
     }
     
 }
