@@ -5,12 +5,9 @@ public class Wizard extends Character implements Weapon, Armor{
     static Dice dice = new Dice();
 
     @Override
-    int attack() {
-        
-        
+    int attack() { 
         return 0;   
     }
-    
     
     public Wizard(String n, int s, int d, int i){
         super(n,s,d,i);
