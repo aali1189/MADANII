@@ -1,6 +1,3 @@
-
-package stacks;
-
 import java.util.Scanner;
 
 public class Stacks {
